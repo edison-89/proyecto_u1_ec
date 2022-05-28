@@ -4,7 +4,7 @@ public class Doctor {
 	private String nombre;
 	private String apellido;
 	private String edad;
-	private String ciudad1;
+	private String ciudad12;
 
 	public String getCiudad() {
 		return ciudad;
