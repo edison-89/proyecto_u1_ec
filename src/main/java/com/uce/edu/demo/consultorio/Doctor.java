@@ -3,6 +3,15 @@ package com.uce.edu.demo.consultorio;
 public class Doctor {
 	private String nombre;
 	private String apellido;
+	private String edad;
+
+	public String getEdad() {
+		return edad;
+	}
+
+	public void setEdad(String edad) {
+		this.edad = edad;
+	}
 
 	// SET Y GET
 	public String getNombre() {
