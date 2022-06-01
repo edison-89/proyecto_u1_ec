@@ -2,6 +2,7 @@ package com.uce.edu.demo.consultorio;
 
 import java.time.LocalDateTime;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,10 +10,25 @@ public class CitaMedica {
 
 	private LocalDateTime fechaCita;
 
+//	@Autowired
 	private Doctor doctor;
+	
+//	@Autowired
 	private Paciente paciente;
 
-	//2) DI por constructor
+	public CitaMedica() {
+	}
+
+	// 2) DI por constructor
+//	public CitaMedica(Doctor doctor) {
+//		this.doctor = doctor;
+//	}
+
+//	public CitaMedica(Paciente paciente) {
+//		this.paciente = paciente;
+//	}
+
+	@Autowired
 	public CitaMedica(Doctor doctor, Paciente paciente) {
 		this.doctor = doctor;
 		this.paciente = paciente;
