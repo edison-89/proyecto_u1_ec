@@ -15,6 +15,7 @@ public class ProyectoU1EcApplication implements CommandLineRunner {
 	//1) DI por atributo
 //	@Autowired
 //	private CitaMedica cita;
+//
 	
 	@Autowired
 	private CitaMedica2 cita;
